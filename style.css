@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+}
+header {
+    padding: 40px 0;
+}
+.container{
+    padding: 0 20%;
+}
+.row-head {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+h1{
+    font-family: 'PT Serif', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;  
+    margin-right: 25px;
+}
+h3{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.head-text p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+}
+main {
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+
+.grid-item{
+    position: relative;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    border-radius: 2px;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #A9A9A9;
+    padding: 27px;
+
+}
+.grid-name {
+    position: absolute;
+    top: 100%;
+    padding-top: 7px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+}
+@media (min-width:550px){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(3, 28%);
+        justify-content: space-between;
+        grid-row-gap: 130px;
+        
+    }
+    .grid-item-2, .grid-item-5{
+        top: 22%;
+        position: relative;
+    }
+    .grid-item .grid-role {
+        position: relative;
+        transform: rotate(90deg);
+        text-transform: uppercase;
+        left: 57%;
+        top: -70%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        font-family: 'PT Serif', serif;
+    }
+}
+
+@media (max-width:770px) {
+    .container{
+        padding: 0 8%;
+    }
+    .head-text p{
+        font-size: 15px;
+    }
+    h3{
+        padding-bottom: 5px;
+    }
+    
+}
+@media (max-width:550px) {
+    .row-head {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    h1{
+        padding-bottom: 45px;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2, 43%);
+        justify-content: space-between;
+        grid-row-gap: 130px;
+       
+        
+    }
+    .grid-item .grid-role {
+        position: relative;
+        transform: rotate(90deg);
+        text-transform: uppercase;
+        left: 57%;
+        top: -73%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        font-family: 'PT Serif', serif;
+        width: 100%;
+        display: flex;
+    }
+    .grid-item-2, .grid-item-4, .grid-item-6{
+        top: 22%;
+        position: relative;
+    }
+}
